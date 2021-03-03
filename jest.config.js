@@ -7,7 +7,9 @@ module.exports = {
   coverageReporters: ['text-summary', 'html'],
   testMatch: [
     '<rootDir>/test/*.spec.ts',
-    '<rootDir>\\test\\*.spec.ts', // for Windows
+    '<rootDir>/test/iac-unit-tests/*.spec.ts',
+    '<rootDir>\\test\\*.spec.ts', // for Windows,
+    '<rootDir>\\test\\iac-unit-tests\\*.spec.ts', // for Windows
     '<rootDir>/packages/**/test/*.spec.ts',
     '<rootDir>/packages/**/test/**/*.spec.ts',
     '<rootDir>\\packages\\**\\test\\*.spec.ts', // for Windows
