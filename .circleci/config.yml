@@ -505,8 +505,8 @@ workflows:
           acceptance_tests: true
           system_tests: true
           package_tests: true
-          requires:
-            - Regression Test
+          # requires:
+          #   - Regression Test
       - test-windows:
           name: Windows, Node 12 - "Root" tap tests
           context: nodejs-install
@@ -557,8 +557,8 @@ workflows:
           acceptance_tests: true
           system_tests: true
           package_tests: true
-          requires:
-            - Regression Test
+          # requires:
+          #   - Regression Test
       - test-linux:
           name: Linux, Node 12 - "Root" tap tests
           context: nodejs-install
